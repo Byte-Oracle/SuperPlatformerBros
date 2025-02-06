@@ -37,12 +37,11 @@ func process_jumps(delta):
 	if not is_on_floor() && current_time <= last_time_on_ground + coyote_time && not used_coyote_time && Input.is_action_just_pressed("jump"):
 		velocity.y = jump_velocity
 		used_coyote_time = true
-		AudioStreamManager.play("res://assets/sfx/8bit-SFX-Library/Player/jump-4.wav")
-
-	if is_on_floor() && Input.is_action_just_pressed("jump"):
+		AudioStreamManager.play(AudioStreamManager.sfx.jump)
+	elif is_on_floor() && Input.is_action_just_pressed("jump"):
 		velocity.y = jump_velocity
 		used_coyote_time = true 
-		AudioStreamManager.play("res://assets/sfx/8bit-SFX-Library/Player/jump-4.wav")
+		AudioStreamManager.play(AudioStreamManager.sfx.jump)
 	
 	if not is_on_floor():
 		if Input.is_action_pressed("jump"):

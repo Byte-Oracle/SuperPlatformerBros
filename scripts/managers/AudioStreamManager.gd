@@ -1,11 +1,15 @@
 extends Node
 
+static var sfx = {
+    "jump": "res://assets/sfx/8bit-SFX-Library/Player/jump-4.wav",
+    "win": "res://assets/sfx/8bit-SFX-Library/Win/win-8.wav"
+}
+
 var num_players = 8
 var bus = "SFX"
 
 var available = []  # The available players.
 var queue = []  # The queue of sounds to play.
-
 
 func _ready():
 	# Create the pool of AudioStreamPlayer nodes.
@@ -22,8 +26,8 @@ func _on_stream_finished(stream):
 	available.append(stream)
 
 
-func play(sound_path):
-	queue.append(sound_path)
+func play(sound):
+	queue.append(sound)
 
 
 func _process(_delta):

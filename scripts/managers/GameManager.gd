@@ -11,5 +11,5 @@ func stage_init():
 		flag.on_touch.connect(_win_flag)
 
 func _win_flag():
-	AudioStreamManager.play("res://assets/sfx/8bit-SFX-Library/Win/win-8.wav")
+	AudioStreamManager.play(AudioStreamManager.sfx.win)
 	## TODO: Introduce basic win state, just reload the scene as there is no level picker screen yet.
