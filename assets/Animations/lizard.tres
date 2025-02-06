@@ -1,0 +1,44 @@
+[gd_resource type="SpriteFrames" load_steps=6 format=3 uid="uid://bjiljxkepwx0b"]
+
+[ext_resource type="Texture2D" uid="uid://c7syemv8twye8" path="res://assets/Enemies/Lizard (32x32).png" id="1_nx2sm"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g5fjh"]
+atlas = ExtResource("1_nx2sm")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_phhmb"]
+atlas = ExtResource("1_nx2sm")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fxfvf"]
+atlas = ExtResource("1_nx2sm")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nmmhn"]
+atlas = ExtResource("1_nx2sm")
+region = Rect2(32, 32, 32, 32)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g5fjh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_phhmb")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 3.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fxfvf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nmmhn")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 3.0
+}]

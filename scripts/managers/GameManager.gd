@@ -7,8 +7,9 @@ var flag : Node2D
 
 func stage_init():
 	LevelMusicManager.play_music(current_level.music_path)
-	if current_level.level_type == current_level.level_types.Flag:
-		flag.on_touch.connect(_win_flag)
+	
+	#if current_level.level_type == current_level.level_types.Flag:
+	#	flag.on_touch.connect(_win_flag)
 
 func _win_flag():
 	AudioStreamManager.play(AudioStreamManager.sfx.win)
