@@ -1,15 +1,15 @@
 [gd_scene load_steps=14 format=4 uid="uid://4cj8g20pnqg3"]
 
-[ext_resource type="Script" path="res://scripts/levels/level 1.gd" id="1_3umc0"]
-[ext_resource type="Script" path="res://scripts/player/player_camera_controller.gd" id="1_ctke2"]
+[ext_resource type="Script" uid="uid://cai3rhfprit7p" path="res://scripts/levels/level 1.gd" id="1_3umc0"]
+[ext_resource type="Script" uid="uid://dd4rd7js22140" path="res://scripts/player/player_camera_controller.gd" id="1_ctke2"]
 [ext_resource type="TileSet" uid="uid://bh7xigjsq8604" path="res://assets/Tile Maps/Pixel Adventure/Foreground Tilemap.tres" id="1_ion05"]
 [ext_resource type="TileSet" uid="uid://dy8tk5p3vv7h6" path="res://assets/Tile Maps/Pixel Adventure/Background Tilemap.tres" id="2_16sp7"]
 [ext_resource type="SpriteFrames" uid="uid://7kkq04vr4n5" path="res://assets/Animations/ninja_frog_animation.tres" id="3_8xpjs"]
-[ext_resource type="Script" path="res://scripts/player/player_controller.gd" id="3_ii68g"]
-[ext_resource type="Script" path="res://scripts/player/player_anim_controller.gd" id="6_r7yqw"]
+[ext_resource type="Script" uid="uid://2bl8xpl6t63n" path="res://scripts/player/player_controller.gd" id="3_ii68g"]
+[ext_resource type="Script" uid="uid://bp51pcybtqebj" path="res://scripts/player/player_anim_controller.gd" id="6_r7yqw"]
 [ext_resource type="Material" uid="uid://cr0p6r350y8jf" path="res://assets/particles/player/walking_dust.tres" id="7_662d4"]
 [ext_resource type="Texture2D" uid="uid://d2npii4qrobx" path="res://assets/pixel-adventure-1-pack/Other/Dust Particle.png" id="7_mmmxl"]
-[ext_resource type="Script" path="res://scripts/player/player_particle_controller.gd" id="9_axaet"]
+[ext_resource type="Script" uid="uid://b4ha2ort2hk8k" path="res://scripts/player/player_particle_controller.gd" id="9_axaet"]
 [ext_resource type="SpriteFrames" uid="uid://bjiljxkepwx0b" path="res://assets/Animations/lizard.tres" id="11_gfcq4"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jsbqh"]
@@ -61,11 +61,11 @@ z_index = 2
 position = Vector2(-5, 15)
 emitting = false
 amount = 7
-process_material = ExtResource("7_662d4")
 texture = ExtResource("7_mmmxl")
 explosiveness = 0.1
 randomness = 0.1
 fixed_fps = 60
+process_material = ExtResource("7_662d4")
 script = ExtResource("9_axaet")
 
 [node name="Lizard" type="RigidBody2D" parent="."]
